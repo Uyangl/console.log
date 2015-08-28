@@ -1,0 +1,520 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.13.0-48-generic (buildd@orlo) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #80-Ubuntu SMP Thu Mar 12 11:16:15 UTC 2015 (Ubuntu 3.13.0-48.80-generic 3.13.11-ckt16)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.13.0-48-generic root=UUID=2ed4c374-2ddb-4a75-af24-98df753dbf6d ro console=tty1 console=ttyS0
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.4 present.
+[    0.000000] Hypervisor detected: Xen HVM
+[    0.000000] Xen version 4.2.
+[    0.000000] Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+[    0.000000] Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+[    0.000000] You might have to change the root device
+[    0.000000] from /dev/hd[a-d] to /dev/xvd[a-d]
+[    0.000000] in your root= kernel command line option
+[    0.000000] No AGP bridge found
+[    0.000000] e820: last_pfn = 0x40000 max_arch_pfn = 0x400000000
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] found SMP MP-table at [mem 0x000fbba0-0x000fbbaf] mapped at [ffff8800000fbba0]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000] init_memory_mapping: [mem 0x3fe00000-0x3fffffff]
+[    0.000000] init_memory_mapping: [mem 0x3c000000-0x3fdfffff]
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x3bffffff]
+[    0.000000] RAMDISK: [mem 0x37214000-0x37901fff]
+[    0.000000] ACPI: RSDP 00000000000ea020 000024 (v02    Xen)
+[    0.000000] ACPI: XSDT 00000000fc00f5a0 000054 (v01    Xen      HVM 00000000 HVML 00000000)
+[    0.000000] ACPI: FACP 00000000fc00f260 0000F4 (v04    Xen      HVM 00000000 HVML 00000000)
+[    0.000000] ACPI: DSDT 00000000fc0035e0 00BBF6 (v02    Xen      HVM 00000000 INTL 20090123)
+[    0.000000] ACPI: FACS 00000000fc0035a0 000040
+[    0.000000] ACPI: APIC 00000000fc00f360 0000D8 (v02    Xen      HVM 00000000 HVML 00000000)
+[    0.000000] ACPI: HPET 00000000fc00f4b0 000038 (v01    Xen      HVM 00000000 HVML 00000000)
+[    0.000000] ACPI: WAET 00000000fc00f4f0 000028 (v01    Xen      HVM 00000000 HVML 00000000)
+[    0.000000] ACPI: SSDT 00000000fc00f520 000031 (v02    Xen      HVM 00000000 INTL 20090123)
+[    0.000000] ACPI: SSDT 00000000fc00f560 000031 (v02    Xen      HVM 00000000 INTL 20090123)
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x00000000-0x3fffffff]
+[    0.000000]   NODE_DATA [mem 0x3fffb000-0x3fffffff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   DMA32    [mem 0x01000000-0xffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009dfff]
+[    0.000000]   node   0: [mem 0x00100000-0x3fffffff]
+[    0.000000] ACPI: PM-Timer IO Port: 0xb008
+[    0.000000] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x05] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x06] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x07] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x08] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x09] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x0a] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x0b] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x0c] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x0d] lapic_id[0x00] disabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x0e] lapic_id[0x00] disabled)
+[    0.000000] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])
+[    0.000000] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 15 CPUs, 14 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.000000] e820: [mem 0x40000000-0xfbffffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on Xen HVM
+[    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:15 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 28 pages/cpu @ffff88003fc00000 s82368 r8192 d24128 u131072
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 257928
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.13.0-48-generic root=UUID=2ed4c374-2ddb-4a75-af24-98df753dbf6d ro console=tty1 console=ttyS0
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] xsave: enabled xstate_bv 0x7, cntxt size 0x340
+[    0.000000] Checking aperture...
+[    0.000000] No AGP bridge found
+[    0.000000] Memory: 1006376K/1048180K available (7385K kernel code, 1145K rwdata, 3408K rodata, 1336K init, 1444K bss, 41804K reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=15.
+[    0.000000] 	Offload RCU callbacks from all CPUs
+[    0.000000] 	Offload RCU callbacks from CPUs: 0-14.
+[    0.000000] NR_IRQS:16640 nr_irqs:1208 16
+[    0.000000] xen:events: Xen HVM callback vector for event delivery is enabled
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [tty1] enabled
+[    0.000000] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+[    0.000000] console [ttyS0] enabled
+[    0.000000] allocated 4194304 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] tsc: Detected 2400.046 MHz processor
+[    0.008000] Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.09 BogoMIPS (lpj=9600184)
+[    0.012002] pid_max: default: 32768 minimum: 301
+[    0.014777] Security Framework initialized
+[    0.016025] AppArmor: AppArmor initialized
+[    0.020002] Yama: becoming mindful.
+[    0.024101] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.028180] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.032082] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.036004] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.040172] Initializing cgroup subsys memory
+[    0.044007] Initializing cgroup subsys devices
+[    0.048002] Initializing cgroup subsys freezer
+[    0.052002] Initializing cgroup subsys blkio
+[    0.054918] Initializing cgroup subsys perf_event
+[    0.056003] Initializing cgroup subsys hugetlb
+[    0.060045] CPU: Physical Processor ID: 0
+[    0.064751] mce: CPU supports 2 MCE banks
+[    0.067551] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.067551] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0
+[    0.067551] tlb_flushall_shift: 6
+[    0.089963] ACPI: Core revision 20131115
+[    0.095033] ACPI: All ACPI Tables successfully acquired
+[    0.098861] ftrace: allocating 28562 entries in 112 pages
+[    0.128647] Switched APIC routing to physical flat.
+[    0.132312] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+[    0.177050] smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz (fam: 06, model: 3f, stepping: 02)
+[    0.182855] installing Xen timer for CPU 0
+[    0.184064] cpu 0 spinlock event irq 69
+[    0.190869] Performance Events: unsupported p6 CPU model 63 no PMU driver, software events only.
+[    0.197489] x86: Booted up 1 node, 1 CPUs
+[    0.200005] smpboot: Total of 1 processors activated (4800.09 BogoMIPS)
+[    0.204133] NMI watchdog: disabled (cpu0): hardware events not enabled
+[    0.208076] devtmpfs: initialized
+[    0.212819] EVM: security.selinux
+[    0.215098] EVM: security.SMACK64
+[    0.216003] EVM: security.ima
+[    0.218231] EVM: security.capability
+[    0.220590] pinctrl core: initialized pinctrl subsystem
+[    0.223839] regulator-dummy: no parameters
+[    0.224032] RTC time:  3:57:07, date: 08/28/15
+[    0.226867] NET: Registered protocol family 16
+[    0.228112] cpuidle: using governor ladder
+[    0.230940] cpuidle: using governor menu
+[    0.232031] ACPI: bus type PCI registered
+[    0.234694] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.236242] PCI: Using configuration type 1 for base access
+[    0.240244] bio: create slab <bio-0> at 0
+[    0.243020] ACPI: Added _OSI(Module Device)
+[    0.244004] ACPI: Added _OSI(Processor Device)
+[    0.247239] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.248003] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.254490] ACPI: Interpreter enabled
+[    0.256007] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131115/hwxface-580)
+[    0.261975] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131115/hwxface-580)
+[    0.268013] ACPI: (supports S0 S3 S4 S5)
+[    0.270700] ACPI: Using IOAPIC for interrupt routing
+[    0.272040] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.292310] ACPI: No dock devices found.
+[    0.330393] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.332010] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.336009] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[    0.339571] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.340652] acpiphp: Slot [0] registered
+[    0.343647] acpiphp: Slot [3] registered
+[    0.344236] acpiphp: Slot [4] registered
+[    0.347237] acpiphp: Slot [5] registered
+[    0.348306] acpiphp: Slot [6] registered
+[    0.351298] acpiphp: Slot [7] registered
+[    0.352386] acpiphp: Slot [8] registered
+[    0.355437] acpiphp: Slot [9] registered
+[    0.356312] acpiphp: Slot [10] registered
+[    0.359344] acpiphp: Slot [11] registered
+[    0.360277] acpiphp: Slot [12] registered
+[    0.363303] acpiphp: Slot [13] registered
+[    0.364302] acpiphp: Slot [14] registered
+[    0.367355] acpiphp: Slot [15] registered
+[    0.368273] acpiphp: Slot [16] registered
+[    0.371196] acpiphp: Slot [17] registered
+[    0.372330] acpiphp: Slot [18] registered
+[    0.375006] acpiphp: Slot [19] registered
+[    0.376235] acpiphp: Slot [20] registered
+[    0.378891] acpiphp: Slot [21] registered
+[    0.380230] acpiphp: Slot [22] registered
+[    0.382767] acpiphp: Slot [23] registered
+[    0.384303] acpiphp: Slot [24] registered
+[    0.387627] acpiphp: Slot [25] registered
+[    0.388257] acpiphp: Slot [26] registered
+[    0.391033] acpiphp: Slot [27] registered
+[    0.392312] acpiphp: Slot [28] registered
+[    0.395379] acpiphp: Slot [29] registered
+[    0.396275] acpiphp: Slot [30] registered
+[    0.399333] acpiphp: Slot [31] registered
+[    0.400285] PCI host bridge to bus 0000:00
+[    0.402982] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.404005] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+[    0.407792] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+[    0.408006] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+[    0.411975] pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff]
+[    0.417031] * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+[    0.417031] * this clock source is slow. Consider trying other clock sources
+[    0.420937] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+[    0.429010] ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)
+[    0.434213] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[    0.438831] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[    0.442814] ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10 11)
+[    0.462594] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.464100] xen:balloon: Initialising balloon driver
+[    0.476029] xen_balloon: Initialising balloon driver
+[    0.480317] vgaarb: setting as boot device: PCI:0000:00:02.0
+[    0.483440] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.484007] vgaarb: loaded
+[    0.485814] vgaarb: bridge control possible 0000:00:02.0
+[    0.488173] SCSI subsystem initialized
+[    0.491262] init_memory_mapping: [mem 0x40000000-0x47ffffff]
+[    0.492768] ACPI: bus type USB registered
+[    0.495465] usbcore: registered new interface driver usbfs
+[    0.496017] usbcore: registered new interface driver hub
+[    0.499299] usbcore: registered new device driver usb
+[    0.500105] PCI: Using ACPI for IRQ routing
+[    0.503780] NetLabel: Initializing
+[    0.504005] NetLabel:  domain hash size = 128
+[    0.506795] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.508022] NetLabel:  unlabeled traffic allowed by default
+[    0.511414] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    0.512016] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.516004] hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+[    0.522072] Switched to clocksource xen
+[    0.525771] AppArmor: AppArmor Filesystem Enabled
+[    0.528598] pnp: PnP ACPI init
+[    0.530946] ACPI: bus type PNP registered
+[    0.533438] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+[    0.537681] system 00:02: [io  0x08a0-0x08a3] has been reserved
+[    0.541393] system 00:02: [io  0x0cc0-0x0ccf] has been reserved
+[    0.545140] system 00:02: [io  0x04d0-0x04d1] has been reserved
+[    0.548938] system 00:0a: [io  0x10c0-0x1141] has been reserved
+[    0.552688] system 00:0a: [io  0xb044-0xb047] has been reserved
+[    0.571635] pnp: PnP ACPI: found 11 devices
+[    0.574226] ACPI: bus type PNP unregistered
+[    0.582315] NET: Registered protocol family 2
+[    0.585143] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.589104] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[    0.592689] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.596438] TCP: reno registered
+[    0.598544] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.602117] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.606641] NET: Registered protocol family 1
+[    0.609503] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.614252] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    0.617909] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.622046] Trying to unpack rootfs image as initramfs...
+[    0.724858] Freeing initrd memory: 7096K (ffff880037214000 - ffff880037902000)
+[    0.728904] microcode: CPU0 sig=0x306f2, pf=0x1, revision=0x25
+[    0.731916] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[    0.736893] Scanning for low memory corruption every 60 seconds
+[    0.740418] Initialise system trusted keyring
+[    0.742879] audit: initializing netlink socket (disabled)
+[    0.745649] type=2000 audit(1440734227.642:1): initialized
+[    0.770112] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.773992] zbud: loaded
+[    0.775732] VFS: Disk quotas dquot_6.5.2
+[    0.777951] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.781571] fuse init (API version 7.22)
+[    0.783839] msgmni has been set to 1979
+[    0.786224] Key type big_key registered
+[    0.788495] Key type asymmetric registered
+[    0.790735] Asymmetric key parser 'x509' registered
+[    0.793277] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.797166] io scheduler noop registered
+[    0.799320] io scheduler deadline registered (default)
+[    0.801990] io scheduler cfq registered
+[    0.804193] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.807074] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.810313] ipmi message handler version 39.2
+[    0.812690] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.816708] ACPI: Power Button [PWRF]
+[    0.818941] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    0.822963] ACPI: Sleep Button [SLPF]
+[    0.825063] GHES: HEST is not enabled!
+[    0.827530] xen:grant_table: Grant tables using version 1 layout
+[    0.830555] Grant table initialized
+[    0.832634] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+[    0.835558] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.864373] 00:09: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.869138] Linux agpgart interface v0.103
+[    0.872281] brd: module loaded
+[    0.874531] loop: module loaded
+[    0.896210] scsi0 : ata_piix
+[    0.898862] scsi1 : ata_piix
+[    0.901422] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[    0.907624] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[    0.917344] libphy: Fixed MDIO Bus: probed
+[    0.920821] tun: Universal TUN/TAP device driver, 1.6
+[    0.924818] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.929886] PPP generic driver version 2.4.2
+[    0.934867] xen_netfront: Initialising Xen virtual ethernet driver
+[    0.940100] blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled;
+[    0.946501] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.949886] ehci-pci: EHCI PCI platform driver
+[    0.953846] ehci-platform: EHCI generic platform driver
+[    0.957117] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.960522] ohci-pci: OHCI PCI platform driver
+[    0.963125] ohci-platform: OHCI generic platform driver
+[    0.968330] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.971805]  xvda: xvda1
+[    0.973534] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    0.979844] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.983728] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.987710] mousedev: PS/2 mouse device common for all mice
+[    0.991550] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    0.997671] rtc_cmos 00:04: rtc core: registered rtc_cmos as rtc0
+[    1.003837] rtc_cmos 00:04: alarms up to one day, 114 bytes nvram, hpet irqs
+[    1.008767] device-mapper: uevent: version 1.0.3
+[    1.012560] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    1.018438] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.025861] TCP: cubic registered
+[    1.028816] NET: Registered protocol family 10
+[    1.032570] NET: Registered protocol family 17
+[    1.035948] Key type dns_resolver registered
+[    1.039478] Loading compiled-in X.509 certificates
+[    1.046592] Loaded X.509 cert 'Magrathea: Glacier signing key: 4eb2de249917cbf39cb85692e54cebade594d680'
+[    1.051428] registered taskstats version 1
+[    1.056315] Key type trusted registered
+[    1.061527] Key type encrypted registered
+[    1.063725] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.066635] IMA: No TPM chip found, activating TPM-bypass!
+[    1.070362] xenbus_probe_frontend: Device with no driver: device/vfb/0
+[    1.074459] regulator-dummy: disabling
+[    1.076545]   Magic number: 11:873:968
+[    1.078706] rtc_cmos 00:04: setting system clock to 2015-08-28 03:57:08 UTC (1440734228)
+[    1.083070] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    1.086182] EDD information not available.
+[    1.090496] Freeing unused kernel memory: 1336K (ffffffff81d20000 - ffffffff81e6e000)
+[    1.094480] Write protecting the kernel read-only data: 12288k
+[    1.098976] Freeing unused kernel memory: 796K (ffff880001739000 - ffff880001800000)
+[    1.104301] Freeing unused kernel memory: 688K (ffff880001b54000 - ffff880001c00000)
+Loading, please wait...
+[    1.120186] systemd-udevd[126]: starting version 204
+[    1.157770] FDC 0 is a S82078B
+[    1.728146] tsc: Refined TSC clocksource calibration: 2399.999 MHz
+[    2.183973] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Begin: Loading essential drivers ... done.
+
+Begin: Running /scripts/init-premount ... done.
+
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+
+Begin: Running /scripts/local-premount ... done.
+
+[    2.669348] EXT4-fs (xvda1): INFO: recovery required on readonly filesystem
+[    2.673600] EXT4-fs (xvda1): write access will be enabled during recovery
+[    2.698618] EXT4-fs (xvda1): recovery complete
+[    2.702617] EXT4-fs (xvda1): mounted filesystem with ordered data mode. Opts: (null)
+Begin: Running /scripts/local-bottom ... done.
+
+done.
+
+Begin: Running /scripts/init-bottom ... done.
+
+[    2.874932] random: init urandom read with 51 bits of entropy available
+ * Starting Mount filesystems on boot[74G[ OK ]
+
+ * Starting Populate and link to /run filesystem[74G[ OK ]
+
+ * Stopping Populate and link to /run filesystem[74G[ OK ]
+
+[    3.062087] EXT4-fs (xvda1): re-mounted. Opts: discard
+ * Starting Initialize or finalize resolvconf[74G[ OK ]
+
+ * Stopping Track if upstart is running in a container[74G[ OK ]
+
+ * Starting Signal sysvinit that the rootfs is mounted[74G[ OK ]
+
+ * Starting Clean /tmp directory[74G[ OK ]
+
+ * Stopping Clean /tmp directory[74G[ OK ]
+
+Cloud-init v. 0.7.5 running 'init-local' at Fri, 28 Aug 2015 03:57:11 +0000. Up 3.59 seconds.
+
+cloud-init-nonet[3.82]: waiting 10 seconds for network device
+
+ * Starting set console keymap[74G[ OK ]
+
+ * Starting Signal sysvinit that virtual filesystems are mounted[74G[ OK ]
+
+ * Starting Signal sysvinit that virtual filesystems are mounted[74G[ OK ]
+
+ * Starting Bridge udev events into upstart[74G[ OK ]
+
+ * Starting Signal sysvinit that remote filesystems are mounted[74G[ OK ]
+
+ * Starting device node and kernel event manager[74G[ OK ]
+
+ * Stopping set console keymap[74G[ OK ]
+
+ * Starting cold plug devices[74G[ OK ]
+
+ * Starting log initial device creation[74G[ OK ]
+
+ * Starting Uncomplicated firewall[74G[ OK ]
+
+ * Starting configure network device security[74G[ OK ]
+
+ * Starting configure network device[74G[[31mfail[39;49m]
+
+ * Stopping configure network device security[74G[ OK ]
+
+ * Starting configure network device security[74G[ OK ]
+
+ * Starting configure network device[74G[[31mfail[39;49m]
+
+ * Stopping configure network device security[74G[ OK ]
+
+ * Starting Mount network filesystems[74G[ OK ]
+
+ * Stopping Mount network filesystems[74G[ OK ]
+
+ * Starting Bridge socket events into upstart[74G[ OK ]
+
+ * Stopping cold plug devices[74G[ OK ]
+
+ * Stopping log initial device creation[74G[ OK ]
+
+ * Starting enable remaining boot-time encrypted block devices[74G[ OK ]
+
+cloud-init-nonet[13.82]: waiting 120 seconds for network device
+
+cloud-init-nonet[133.82]: gave up waiting for a network device.
+
+Cloud-init v. 0.7.5 running 'init' at Fri, 28 Aug 2015 03:59:21 +0000. Up 133.95 seconds.
+
+ci-info: +++++++++++++++++++++++Net device info++++++++++++++++++++++++
+
+ci-info: +--------+-------+-----------+-----------+-------------------+
+
+ci-info: | Device |   Up  |  Address  |    Mask   |     Hw-Address    |
+
+ci-info: +--------+-------+-----------+-----------+-------------------+
+
+ci-info: |   lo   |  True | 127.0.0.1 | 255.0.0.0 |         .         |
+
+ci-info: |  eth0  | False |     .     |     .     | 06:a7:4c:58:ac:dd |
+
+ci-info: +--------+-------+-----------+-----------+-------------------+
+
+ci-info: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Route info failed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+2015-08-28 03:59:21,519 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [0/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:22,530 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [1/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:23,532 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [2/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:24,535 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [3/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:25,537 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [4/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:26,540 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [5/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:28,554 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [7/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:30,557 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [9/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:32,561 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [11/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:34,564 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [13/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:36,568 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [15/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:39,573 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [18/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:42,577 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [21/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:45,582 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [24/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+2015-08-28 03:59:48,586 - url_helper.py[WARNING]: Calling 'http://169.254.169.254/2009-04-04/meta-data/instance-id' failed [27/120s]: request error [HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /2009-04-04/meta-data/instance-id (Caused by <class 'socket.error'>: [Errno 101] Network is unreachable)]
+
+ * Stopping device node and kernel event manager[74G[ OK ]
+
+ * Stopping Bridge socket events into upstart[74G[ OK ]
+
+ * Stopping Initialize or finalize resolvconf[74G[ OK ]
+
+ * Starting System V runlevel compatibility[74G[ OK ]
+
+ * Starting save system clock to hardware clock[74G[ OK ]
+
+ * Stopping Bridge udev events into upstart[74G[ OK ]
+
+ * Starting Waiting for state[74G[ OK ]
+
+wait-for-state stop/waiting
+
+ * Asking all remaining processes to terminate...       [80G 
+[74G[ OK ]
+
+ * All processes ended within 1 seconds...       [80G 
+[74G[ OK ]
+
+ * Deactivating swap...       [80G 
+[74G[ OK ]
+
+ * Stopping early crypto disks...       [80G 
+[74G[ OK ]
+
+mount: / is busy
+
+ * Will now halt
+
+[  164.185734] reboot: Power down
